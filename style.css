@@ -56,7 +56,7 @@ button:hover {
 #butterfly {
     width: 100px;
     height: 100px;
-    background: url('/img/output-onlinegiftools\ (1\).gif') no-repeat;
+    background: url('./img/output-onlinegiftools\ \(1\).gif') no-repeat;
     background-size: cover;
     position: fixed;
     top: 50px;
