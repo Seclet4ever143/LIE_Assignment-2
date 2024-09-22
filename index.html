@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Life Cycle of a Butterfly</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>The Life Cycle of a Butterfly</h1>
+    </header>
+
+    <section class="stage" id="egg">
+        <h2>Egg Stage</h2>
+        <p id="eggText">The life cycle begins when the butterfly lays eggs on a leaf. The egg stage is crucial as the caterpillar develops inside it. The egg hatches into a tiny caterpillar, marking the beginning of the next stage.</p>
+        <img src="./img/Butterfly-Eggs.png" alt="Butterfly Egg">
+        <button onclick="narrateText('eggText')">Narrate Text</button>
+    </section>
+    
+    <section class="stage" id="larva">
+        <h2>Larva (Caterpillar) Stage</h2>
+        <p>During this stage, the caterpillar emerges and grows by shedding its skin...</p>
+        <img src="./img/Larva.gif" alt="Caterpillar Animation">
+        <button onclick="showVideo('larvaVideo')">Watch Video</button>
+        <video id="larvaVideo" width="500" height="300" controls style="display:none;">
+            <source src="./vids/LARVA.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="stage" id="pupa">
+        <h2>Pupa (Chrysalis) Stage</h2>
+        <p>In the pupa stage, the caterpillar is inside a chrysalis, undergoing transformation...</p>
+        <div class="image-container">
+            <img src="./img/pupaa.jpg" alt="Chrysalis Image">
+            <img src="./img/PUPA.gif" alt="Chrysalis Image">
+        </div>
+    </section>
+    
+    <section class="stage" id="adult">
+        <h2>Adult Butterfly Stage</h2>
+        <p>The butterfly emerges from the chrysalis and begins to fly, completing the life cycle...</p>
+        <img src="./img/butterfly.png" alt="Adult Butterfly">
+        <div class="animation">
+            <button onclick="animateButterfly()">See Butterfly Fly</button>
+            <button onclick="stopButterfly()">Stop Butterfly</button>
+            <div id="butterfly" style="display:none;"></div>
+        </div>
+    </section>
+    
+
+    <section class="summary">
+        <h2>Overall Life Cycle of a Butterfly</h2>
+        <p>In this section, you will see the entire life cycle of a butterfly from egg to adult in a short video.</p>
+        <video width="500" height="300" controls>
+            <source src="./vids/Butterfly.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

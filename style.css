@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #695acda1;
+    color: #333;
+}
+
+header {
+    background-color: #7362df;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.stage, .summary {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stage img, .summary video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 50%;
+    height: 300px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #483d8b;
+}
+
+#butterfly {
+    width: 100px;
+    height: 100px;
+    background: url('/img/output-onlinegiftools\ (1\).gif') no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    animation: fly 10s linear infinite;
+}
+
+@keyframes fly {
+    0% { left: 0; }
+    100% { left: calc(100% - 100px); }
+}
+
